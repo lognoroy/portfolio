@@ -1,0 +1,1962 @@
+* {
+    font-family: 'Mulish', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ********************************************** Default Desktop Width ********************************************** */
+
+/* Additional Changes Starts Here */
+.headings h2,
+.headings h4  {
+    font-family: 'Poppins', sans-serif;
+}
+/* Additional Changes Ends Here */
+
+/* Navigation Starts Here */
+.topBar, .mobNav {
+    display: none;
+}
+
+.deskNav {
+    background-color: #05141f;
+    text-align: center;
+    color: whitesmoke;
+    padding-top: 50px;
+    width: 15.5%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    overflow: auto;
+    z-index: 0;
+    /* border-right: 1px solid #65c3ba9d; */
+}
+
+.deskNav::-webkit-scrollbar {
+    width: 8px;
+}
+
+.deskNav::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background-color: transparent;
+}
+
+.deskNav:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(128, 128, 128, 0.7);
+}
+
+.deskNav .navigationContent {
+    height: 100%;
+    position: relative;
+}
+
+.deskNav .myPhoto .initials {
+    margin: 0 auto;
+    width: 100%;
+    background-color:#05141f;
+    text-align: center;
+}
+
+.deskNav .myPhoto .initials img {
+    width: 80%;
+    border-radius: 30px;
+
+}
+
+.deskNav .social {
+    /* margin-top: 170px; */
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+
+.deskNav .social a {
+    text-decoration: none;
+    display: inline-block;
+    color: #B1D4E0;
+    width: 37px;
+    height: 37px;
+    border-radius: 100%;
+    padding-top: 2px;
+    font-size: 20px;
+}
+
+.deskNav .social a:first-child {
+    margin-right: 10px;
+}
+
+.deskNav .social a:hover {
+    color: white;
+}
+
+.deskNav .available {
+    font-size: 13px;
+    color: gray;
+    margin: 10px 0 10px;
+}
+
+.deskNav hr {
+    border: none;
+    height: 1px;
+    background-color: #B1D4E0;
+    width: 70%;
+    margin: 0px auto 10px;
+}
+
+.deskNav ul {
+    margin: 100px 0 0;
+}
+
+.deskNav ul li {
+    margin-top: 20px;
+    list-style: none;
+    text-align: center;
+}
+
+.deskNav ul li a {
+    position: relative;
+    font-family: 'Poppins';
+    text-decoration: none;
+    color: #B1D4E0;
+    font-size: 14px;
+    padding: 10px 20px 20px;
+    display: block;
+    transition: 300ms;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+
+.deskNav ul li a .line {
+    width: 0;
+    position: absolute;
+    height: 0;
+    left: 0;
+    top: 0px;
+    transition: 0.3s;
+}
+
+.deskNav ul li a:hover .line {
+    border-bottom: 1px solid #B1D4E0;
+    border-left: 5px solid #B1D4E0;
+    height: 100%;
+    width: 100%;
+}
+/* Navigation Ends Here */
+
+.websiteBody {
+    position: absolute;
+    width: 84.5%;
+    right: 0px;
+    top: 0px;
+    z-index: 0;
+    overflow: auto;
+}
+
+/* Website Header Starts Here */
+header {
+    color: white;
+    height: 100vh;
+    min-height: 500px;
+    padding-top: 150px;
+    position: relative;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../img/header_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+header .headings {
+    text-align: center;
+}
+
+header .headings h2 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    animation-name: heading;
+    animation-duration: 1s;
+    font-family: 'Montserrat';
+    color: #2E8BC0;
+}
+
+header .headings hr {
+    background-color: #2E8BC0;
+    border: none;
+    width: 100px;
+    height: 1.5px;
+    position: relative;
+    top: -5px;
+    display: inline-block;
+}
+
+header .headings h1 {
+    font-size: 60px;
+    /* letter-spacing: 2px; */
+    /* margin-top: 10px; */
+    animation-name: heading;
+    animation-duration: 1s;
+    font-weight: 600;
+    font-family: 'Montserrat';
+}
+
+header .headings h3 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    /* margin-top: 20px; */
+    animation-name: heading;
+    animation-duration: 1s;
+    font-family: 'Montserrat';
+}
+
+header .headings .mywork {
+    /* background-color: rgba(177, 212, 224, 0.8); */
+    border-bottom: 2.5px solid #2E8BC0;
+    border-left: 2.5px solid #2E8BC0;
+    font-family:'Montserrat';
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    display: inline-block;
+    padding: 7px 15px;
+    margin-top: 50px;
+    transition: 300ms;
+}
+
+header .headings .mywork:hover {
+    background-color: #2e8bc094;
+}
+
+header .scroll-container {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+}
+
+header .scroll-container .text {
+    font-family:'Montserrat';
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 3px;
+    display: inline-block;
+    transform: rotate(90deg);
+    padding: 7px 9px;
+}
+
+header .scroll-container .line {
+    height: 80px;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+header .scroll-container .line hr {
+    display: inline-block;
+    width: 1.7px;
+    height: 100%;
+    border: none;
+    background-color: #2E8BC0;
+    animation-duration: 3000ms;
+    animation-name: scrolldown;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+}
+/* Website Header Ends Here */
+
+/* ................................................................................................................. */
+
+/* Website Body Starts Here */
+/* Summary Section Starts Here */
+#summary {
+    padding: 100px 4.5% 150px;
+    background-color: white;
+    min-height: 100vh;
+}
+
+#summary img {
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
+#summary .headings h2 {
+    font-size: 30px;
+    color: #0C2D48;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+#summary .headings h4 {
+    color: #2E8BC0;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+#summary .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+#summary .image {
+    margin-top: 73px;
+    width: 25%;
+    max-width: 290px;
+    border: 7px solid #0C2D48;
+}
+
+#summary .text {
+    width: 60%;
+}
+
+#summary .text h4 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+#summary .text p {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 27px;
+    margin-top: 30px;
+    font-weight: 400;
+    color: rgb(71, 71, 71);
+}
+
+#summary .text p span {
+    font-style: italic;
+    color: #145DA0;
+}
+
+#summary .text p .contactMe {
+    text-decoration: none;
+    font-weight: 800;
+    color: #000;
+}
+
+#summary .text p .contactMe:hover {
+    color: gray;
+}
+
+#summary .skills {
+    margin: 50px auto 0;
+}
+
+#summary .skills h3 {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+#summary .skills .boxes {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#summary .skills .boxes .smBox {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #e9e9e9;
+    margin: 10px 10px 0 0;
+}
+
+#summary .resumecontainer {
+    margin-top: 60px;
+}
+
+#summary .resume {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#summary .resume:hover {
+    color: lightgrey;
+}
+/* Summary Section Ends Here */
+
+/* My Github Section Starts Here */
+#mygithub {
+    padding: 60px 4.5% 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgba(177, 212, 224, 0.7);
+}
+
+#mygithub .white {
+    color: #0C2D48;
+}
+
+#mygithub .right {
+    width: 60%;
+    color: #0C2D48;
+}
+
+#mygithub .left {
+    width: 30%;
+    padding-top: 55px;
+}
+
+#mygithub h2 {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+#mygithub p {
+    font-size: 15px;
+    color: #145DA0;
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+}
+
+#mygithub a {
+    font-size: 14px;
+    letter-spacing: 3px;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 2.5px solid #0C2D48;
+    border-left: 2.5px solid #0C2D48;
+    color: #0C2D48;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    transition: 500ms;
+    font-weight: 500;
+    font-family: 'Montserrat';
+}
+
+#mygithub a:hover {
+    background-color: #0C2D48;
+    box-shadow: none;
+    color: #B1D4E0;
+}
+/* My Github Section Ends Here */
+
+/* Portfolio Section Starts Here */
+#portfolio {
+    padding: 100px 4.5% 150px;
+    position: relative;
+    min-height: 100vh;
+}
+
+#portfolio .flexBox .box:hover {
+    cursor: pointer;
+}
+
+#portfolio .headings h2 {
+    font-size: 30px;
+    font-weight: 800;
+    color: #0C2D48;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+#portfolio .headings h4 {
+    color: #2E8BC0;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+/* Tab Menu Secion */
+#portfolio .tabContent {
+    padding-top: 50px;
+}
+
+#portfolio .webdev,
+#portfolio .java {
+    width: 100%;
+}
+
+#portfolio .tabs {
+    padding: 10px 0 0;
+    width: 100%;
+    list-style-type: none;
+    margin-top: 50px;
+}
+
+#portfolio .tabs li {
+    display: inline-block;
+}
+
+#portfolio .tabs .active {
+    border-bottom: 3px solid #B1D4E0;
+}
+
+#portfolio .tabs .active button {
+    color: #145DA0;
+    font-weight: 600;
+    transition: 300ms;
+}
+
+#portfolio .tabs button {
+    color: gray;
+    width: 100px;
+    font-size: 15px;
+    padding: 5px;
+    border: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    background: none;
+    transition: 300ms;
+}
+
+#portfolio .tabs button:hover {
+    color: #145DA0;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#portfolio .tabs button:first-child {
+    margin: 0;
+}
+
+/* Web Development Projcts */
+#portfolio .webdev {
+    width: 100%;
+}
+
+#portfolio .webdev .title {
+    text-align: center;
+    font-size: 25px;
+    color: gray;
+    margin-bottom: 50px;
+}
+
+#portfolio .webdev .flexBox img {
+    width: 100%;
+    display: block;
+    transition: 500ms;
+    height: 100%;
+}
+
+#portfolio .webdev .flexBox .box .websiteImg {
+    position: relative;
+    overflow: hidden;
+
+}
+
+#portfolio .webdev .flexBox,
+#portfolio .java .flexBox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#portfolio .webdev .flexBox .box {
+    width: 32.5%;
+    height: 40%;
+    padding: 2px;
+    background-color: rgb(235, 235, 235);
+    /* background-color: #b1d4e085; */
+    /* background-color: rgba(0, 0, 0, 0.1); */
+}
+
+.height{
+    padding-bottom: 5px;
+
+}
+.bg{
+background-color: #fff;
+}
+
+#portfolio .webdev .flexBox .marginTop {
+    margin-top: 20px;
+}
+
+#portfolio .webdev .flexBox .box .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transform: translateX(-100%);
+    text-align: center;
+    padding-top: 20%;
+    transition: 500ms;
+}
+
+#portfolio .webdev .flexBox .box:hover .overlay {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#portfolio .webdev .flexBox .box:hover img {
+    transform: scale(1.5);
+}
+
+#portfolio .webdev .flexBox .box .overlay .allblue {
+    padding: 10px 10px 20px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #b1d4e0d5;
+    color: #0C2D48 !important;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#portfolio .webdev .flexBox .box .overlay a {
+    text-decoration: none;
+    color: #B1D4E0;
+    display: block;
+    width: 200px;
+    padding: 10px 0;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 20px auto 0;
+    border: 2px solid #B1D4E0;
+}
+
+#portfolio .webdev .flexBox .box .overlay a:hover {
+    color: #0C2D48;
+    background-color: rgba(177, 212, 224, 0.8);
+}
+
+#portfolio .webdev .flexBox .box .overlay button {
+    color: lightgray;
+    background: none;
+    border: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+    margin-top: 20px;
+    display: block;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+}
+
+#portfolio .webdev .flexBox .box .overlay button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: #B1D4E0;
+}
+
+#portfolio .webdev .blackScreen {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    overflow: auto;
+    padding-top: 100px;
+    display: none;
+}
+
+#portfolio .webdev .blackScreen img {
+    width: 100%;
+}
+
+#portfolio .webdev .blackScreen .content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 5%;
+}
+
+#portfolio .webdev .blackScreen .content .webImg {
+    width: 100%;
+    max-width: 500px;
+    margin-right: 70px;
+}
+
+#portfolio .webdev .blackScreen .content .list {
+    width: 100%;
+    max-width: 500px;
+}
+
+#portfolio .webdev .blackScreen::-webkit-scrollbar {
+    width: 8px;
+}
+
+#portfolio .webdev .blackScreen::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background-color: rgba(128, 128, 128, 0.7);
+}
+
+#portfolio .webdev .blackScreen .closeWin {
+    text-decoration: none;
+    background: none;
+    color: #0C2D48;
+    color: #B1D4E0;
+    display: block;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    border-radius: 10px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: none;
+}
+
+#portfolio .webdev .blackScreen .closeWin:hover {
+    color: white;
+}
+
+#portfolio .webdev .blackScreen .closeWin span {
+    display: block;
+}
+
+#portfolio .webdev .blackScreen .content h2 {
+    font-size: 17px;
+    color: #2E8BC0;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#portfolio .webdev .blackScreen .content .websiteName {
+    font-size: 30px;
+    margin: 0 0 20px;
+    color: #B1D4E0;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+#portfolio .webdev .blackScreen .content a {
+    text-decoration: none;
+    padding: 7px 30px;
+    border: 2px solid #B1D4E0;
+    color: #B1D4E0;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+#portfolio .webdev .blackScreen .content a:hover {
+    background-color: rgba(177, 212, 224, 0.8);
+    color: #0C2D48;
+}
+
+#portfolio .webdev .blackScreen .content h3 {
+    margin: 50px 0 15px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+}
+
+#portfolio .webdev .blackScreen .content ul li {
+    margin-top: 7px;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+/* Java Projects */
+#portfolio .java {
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+/* #portfolio .java .title {
+    font-size: 25px;
+    color: gray;
+    margin-bottom: 50px;
+} */
+
+/* #portfolio .java iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+} */
+
+#portfolio .java img {
+    display: block;
+    width: 100%;
+    transition: 500ms;
+}
+
+#portfolio .java .blackScreen .closeWin {
+    text-decoration: none;
+    color: #B1D4E0;
+    display: block;
+    background: none;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    border-radius: 10px;
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    border: none;
+}
+
+#portfolio .java .blackScreen .closeWin:hover {
+    color: white;
+}
+
+#portfolio .java .blackScreen .closeWin span {
+    display: block;
+}
+
+#portfolio .java .blackScreen {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: auto;
+    padding-top: 100px;
+    z-index: 10;
+}
+
+#portfolio .java .blackScreen::-webkit-scrollbar {
+    width: 8px;
+}
+
+#portfolio .java .blackScreen::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background-color: rgba(128, 128, 128, 0.7);
+}
+
+#portfolio .java .blackScreen .content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 5%;
+    text-align: left;
+}
+
+#portfolio .java .blackScreen .content .vid {
+    width: 100%;
+    max-width: 500px;
+    margin-right: 70px;
+}
+
+#portfolio .java .blackScreen .content .details {
+    width: 100%;
+    max-width: 500px;
+}
+
+#portfolio .java .blackScreen h3 {
+    font-size: 17px;
+    color: #2E8BC0;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#portfolio .java .blackScreen h2 {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 30px;
+    color: #B1D4E0;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+#portfolio .java .blackScreen a {
+    text-decoration: none;
+    color: #B1D4E0;
+    font-weight: 700;
+}
+
+#portfolio .java .blackScreen a:hover {
+    color: white;
+}
+
+#portfolio .java .blackScreen p {
+    color: lightgray;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+#portfolio .java iframe {
+    display: block;
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+#portfolio .java .flexBox .box {
+    width: 32.5%;
+    /* padding: 3px; */
+    /* background-color: #b1d4e085; */
+    padding: 2px;
+    background-color: rgb(235, 235, 235);
+    /* background-color: rgba(240, 240, 240, 0.1); */
+    transition: 300ms;
+}
+
+#portfolio .java .flexBox .box:hover .picture .overlay {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#portfolio .java .flexBox .box:hover .picture img {
+    transform: scale(1.5);
+}
+
+#portfolio .java .flexBox .box .picture {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#portfolio .java .flexBox .box .picture .overlay {
+    padding-top: 20%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: 500ms;
+    transform: translateX(-100%);
+}
+
+#portfolio .java .flexBox .box .overlay .allblue {
+    padding: 10px 10px 20px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #b1d4e0d5;
+    color: #0C2D48 !important;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+#portfolio .java .flexBox .box .picture .overlay a {
+    text-decoration: none;
+    font-size: 15px;
+    color: lightgray;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+#portfolio .java .flexBox .box .picture .overlay button {
+    display: block;
+    background: none;
+    border: 2px solid #B1D4E0;
+    color: #B1D4E0;
+    width: 200px;
+    margin: 0 auto 20px;
+    font-size: 15px;
+    transition: 300ms;
+    padding: 10px 0;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#portfolio .java .flexBox .box .picture .overlay button:hover {
+    background-color: #B1D4E0;
+    color: #0C2D48;
+}
+
+#portfolio .java .flexBox .box .picture .overlay button span {
+    color: #2E8BC0;
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+#portfolio .java .flexBox .box .picture .overlay a:hover {
+    text-decoration: underline;
+    text-decoration-color: #B1D4E0;
+}
+
+#portfolio .java .flexBox .marginTop {
+    margin-top: 20px;
+}
+/* Portfolio Section Ends Here */
+/* Website Body Ends Here */
+
+/* ................................................................................................................. */
+
+/* Website Footer Starts Here */
+footer {
+    /* margin-top: 100px; */
+    /* background-color: #05141f; */
+    background-color: #000;
+    /* border-left: 1px solid #b1d4e02d; */
+    padding: 70px 0 0;
+}
+
+footer .headings {
+    margin-bottom: 80px;
+    padding: 0 4.5% 0;
+}
+
+footer .headings h2 {
+    color: #B1D4E0;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+footer .headings h4 {
+    color: lightgray;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+footer .flexBox {
+    padding: 0 4.5% 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+footer .flexBox .contact {
+    width: 60%;
+}
+
+footer .flexBox .thankyou {
+    width: 40%;
+    color: #B1D4E0;
+    text-align: center;
+}
+
+footer .phone,
+footer .email,
+footer .locate {
+    color: #B1D4E0;
+}
+
+footer .contact hr {
+    border: 0;
+    height: 1px;
+    background: #B1D4E0;
+    width: 300px;
+    visibility: hidden;
+    margin: 10px 0;
+}
+
+footer .contact a {
+    text-decoration: none;
+    color: #B1D4E0;
+    transition: 300ms;
+}
+
+footer .contact .contactLink {
+    display: inline-block;
+    /* background-color: #145DA0; */
+    background-color: #B1D4E0;
+    color: #000;
+    /* border-radius: 7px; */
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    padding-top: 12px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+footer .contact .contactLink:hover {
+    background-color: #B1D4E0;
+    color: #145DA0;
+}
+
+footer .contact .locate .fa {
+    display: inline-block;
+    /* background-color: #145DA0; */
+    background-color: #B1D4E0;
+    color: #000;
+    /* border-radius: 10px; */
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    padding-top: 19px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+footer .contact a:hover {
+    color: white;
+}
+
+footer .flexBox .thankyou p span {
+    font-size: 30px;
+    font-weight: 700;
+    color: #2E8BC0;
+}
+
+footer .flexBox .thankyou p {
+    font-size: 20px;
+}
+
+footer .flexBox .thankyou .greet {
+    margin: 0 0 10px;
+}
+
+footer .flexBox .thankyou .interview {
+    font-size: 15px;
+    margin-top: 50px;
+    color: gray;
+}
+
+footer .social img {
+    max-width: 120px;
+}
+
+footer .social {
+    width: 100%;
+    padding: 20px 4.5% 20px;
+    border-left: 1px solid #b1d4e02d;
+    background-color: #05141f;
+    margin: 50px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .social .footerLogo {
+    width: 50%;
+}
+
+footer .social .links {
+    width: 50%;
+    padding-top: 10px;
+    text-align: right;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+footer .social .links a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 4px;
+    font-family: 'Montserrat';
+}
+
+footer .social .links a:hover {
+    text-shadow: 0 0 5px #fff, 0 0 5px #fff;
+}
+
+footer .social .links .linkedin {
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 1px solid gray;
+}
+/* Website Footer Ends Here */
+
+
+
+/* ********************************************** Media Queries ********************************************** */
+
+/* Media Queries For Tablet Devices */
+@media only screen and (max-width: 1100px) {
+    /* Navigation Starts Here */
+    .deskNav {
+        display: none;
+    }
+
+    .topBar {
+        padding-top: 5px;
+        background-color: #05141f;
+        position: fixed;
+        z-index: 5;
+        width: 100%;
+        display: block;
+        border-bottom: 2px solid #b1d4e03f;
+    }
+
+    .topBar .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .topBar .logo img {
+        height: 60px;
+    }
+
+    .topBar ul {
+        width: 100%;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 20px 15px;
+    }
+
+    .topBar ul li {
+        padding-top: 2px;
+    }
+
+    .topBar a {
+        text-decoration: none;
+        color: #B1D4E0;
+        font-size: 13px;
+        letter-spacing: 3px;
+    }
+
+    .topBar .triggerContainer {
+        display: none;
+    }
+
+    .topBar .trigger {
+        position: relative;
+        width: 40px;
+        height: 35px;
+        background: none;
+        border: none;
+    }
+
+    .topBar .trigger .navopen {
+        position: absolute;
+        color: #B1D4E0;
+        top: 3px;
+        left: -25px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .topBar .trigger .navclose {
+        position: absolute;
+        color: #2E8BC0;
+        top: 0px;
+        left: 6px;
+        font-size: 30px;
+        display: none;
+    }
+    /* Navigation Ends Here */
+
+    
+    .websiteBody {
+        position: static;
+        width: 100%;
+    }
+
+    /* Website Header Starts Here #_Tablet_Devices */
+    header {
+        padding-top: 400px;
+    }
+
+    header .headings {
+        top: 130px;
+    }
+    
+    header .headings  h1 {
+        font-size: 50px;
+        /* margin-top: 20px; */
+    }
+    
+ 
+    /* Website Header Ends Here #_Tablet_Devices */
+
+    /* Website Body Starts Here #_Tablet_Devices */
+    /* Summary Section Starts Here #_Tablet_Devices */
+ 
+    
+    #summary .content {
+        margin-top: 70px;
+    }
+    
+    #summary .image {
+        width: 40%;
+        max-width: 260px;
+        margin: 0px 25px 60px 0px;
+    }
+
+    #summary .text {
+        width: 100%;
+    }
+    /* Summary Section Ends Here #_Tablet_Devices */
+
+    /* My Github Section Starts Here #_Tablet_Devices */
+ 
+    /* My Github Section Ends Here #_Tablet_Devices */
+
+    /* Portfolio Section Starts Here #_Tablet_Devices */
+   
+
+    #portfolio .webdev .blackScreen .content .webImg {
+        /* max-width: 400px; */
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+
+    #portfolio .webdev {
+        margin: 0 auto 0;
+    }
+
+    #portfolio .webdev .flexBox {
+        max-width: 760px;
+        margin: 0 auto;
+    }
+
+    #portfolio .webdev .flexBox .box {
+        width: 49%;
+    }
+
+    #portfolio .webdev .flexBox .marginTopTab {
+        margin-top: 20px;
+    }
+
+    #portfolio .java .blackScreen .content .vid {
+        margin-right: 0px;
+    }
+
+    #portfolio .java .blackScreen .content .details {
+        margin: 50px 0 100px;
+    }
+
+    #portfolio .java .flexBox {
+        max-width: 760px;
+        margin: 0 auto;
+    }
+
+    #portfolio .java .flexBox .box {
+        width: 49%;
+    }
+    #portfolio .java .flexBox .marginTopTab {
+        margin-top: 20px;
+    }
+    /* Portfolio Section Ends Here #_Tablet_Devices */
+    /* Website Body Ends Here #_Tablet_Devices */
+
+    /* Website Footer Starts Here #_Tablet_Devices */
+    footer {
+        border: none;
+    }
+
+    footer .headings h3 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    footer .contactMe {
+        display: none;
+    }
+    /* Website Footer Ends Here #_Tablet_Devices */
+}
+
+
+/* Media Queries For Mobile Devices */
+@media only screen and (max-width: 760px) {
+    /* Navigation Starts Here */
+    .mobNav {
+        background-color: #05141f;
+        text-align: center;
+        display: block;
+        padding: 20px 30px 20px;
+        position: fixed;
+        top: 60px;
+        width: 100%;
+        height: 100vh;
+        z-index: 2;
+        overflow: auto;
+        left: -100%;
+    }
+
+    .mobNav ul li {
+        margin-top: 50px;
+        list-style: none;
+        text-align: right;
+    }
+    
+    .mobNav ul li .fa {
+        font-size: 20px;
+    }
+
+    .mobNav ul li a{
+        text-decoration: none;
+        color: #B1D4E0;
+        font-size: 13px;
+        padding: 10px 0 10px;
+        letter-spacing: 3px;
+    }
+
+    .mobNav ul li a:hover {
+        background-color: rgba(128, 128, 128, 0.5);
+    }
+
+    .topBar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 5px 20px 0;
+        justify-content: space-between;
+    }
+
+    .topBar .logo {
+        width: 70%;
+        text-align: left;
+    }
+
+    .topBar .logo img {
+        max-width: none;
+        height: 50px;
+    }
+
+    .topBar ul {
+        display: none;
+    }
+
+    .topBar h3 {
+        width: 70%;
+        padding: 0;
+        text-align: left;
+    }
+
+    .topBar .triggerContainer {
+        display: block;
+        width: 30%;
+        text-align: right;
+        padding-top: 9px;
+    }
+    /* Navigation Ends Here */
+
+    /* Website Header Starts Here #_Mobile_Devices */
+    header {
+        padding-top: 150px;
+    }
+
+    header .headings {
+        position: static;
+        width: 100%;
+        text-align: center;
+    }
+
+    header .headings h2 {
+        font-size: 15px;
+    }
+
+    header .headings hr {
+        width: 50px;
+        top: -3px;
+    }
+
+    header .headings h1 {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    header .headings h3 {
+        font-size: 17px;
+        margin-top: 10px;
+    }
+
+    header .mouseDown {
+        top: 50%;
+    }
+    /* Website Header Ends Here #_Mobile_Devices */
+
+    /* Website Body Starts Here #_Mobile_Devices */
+    /* Summary Section Starts Here #_Mobile_Devices */
+    #summary {
+        padding: 80px 4.5% 80px;
+    }
+
+    #summary .headings {
+        text-align: center;
+    }
+
+    #summary .headings h2 {
+        font-size: 25px;
+    }
+
+    #summary .headings h4 {
+        font-size: 13px;
+    }
+
+    #summary .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #summary .image {
+        width: 90%;
+        max-width: 250px;
+    }
+
+    #summary .text h4 {
+        font-size: 17px;
+        margin-bottom: 15px;
+    }
+
+    #summary .text p {
+        font-size: 14px;
+        line-height: 23px;
+        margin-top: 15px;
+    }
+
+    #summary .text ul li{
+        font-size: 13px;
+    }
+
+    #summary .skills h3 {
+        font-size: 17px;
+    }
+    
+    #summary .skills .boxes .smBox {
+        font-size: 13px;
+    }
+
+    #summary .text .resume {
+        font-size: 14px;
+    }
+    /* Summary Section Ends Here #_Mobile_Devices */
+
+    /* My Github Section Starts Here #_Mobile_Devices */
+    #mygithub {
+        padding: 30px 4.5% 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #mygithub .right {
+        width: 100%;
+    }
+
+    #mygithub .left {
+        width: 100%;
+        padding-top: 30px;
+        margin: 0 auto;
+    }
+
+    #mygithub h2 {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    #mygithub p {
+        font-size: 13px;
+        margin-top: 10px;
+    }
+
+    #mygithub a {
+        max-width: 200px;
+        padding: 5px;
+        font-size: 13px;
+    }
+    /* My Github Section Ends Here #_Mobile_Devices */
+
+    /* Portfolio Section Starts Here #_Mobile_Devices */
+    #portfolio {
+        padding: 80px 4.5% 0;
+    }
+
+    #portfolio .headings {
+        text-align: center;
+    }
+
+    #portfolio .headings h2 {
+        font-size: 25px;
+    }
+
+    #portfolio .headings h4 {
+        font-size: 13px;
+    }
+
+    #portfolio .tabContent {
+        padding-top: 30px;
+    }
+
+    #portfolio .webdev {
+        margin-top: 0px;
+        /* padding-bottom: 50px; */
+    }
+
+    #portfolio .webdev .title {
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+
+    #portfolio .webdev .flexBox {
+        flex-direction: column;
+        max-width: 400px;
+    }
+
+    #portfolio .webdev .flexBox .box {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #portfolio .webdev .flexBox .box .overlay .allblue {
+        font-size: 16px;
+    }
+
+    #portfolio .webdev .flexBox .box .overlay a,
+    #portfolio .webdev .flexBox .box .overlay button {
+        font-size: 14px;
+    }
+
+    #portfolio .webdev .flexBox .box .overlay a {
+        padding: 5px 0;
+        margin-top: 0;
+    }
+
+    #portfolio .flexBox .box .overlay button {
+        margin-top: 15px;
+    }
+
+    #portfolio .webdev .blackScreen {
+        padding-top: 70px;
+    }
+
+    #portfolio .webdev .blackScreen::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    #portfolio .webdev .blackScreen .closeWin {
+        width: 40px;
+        height: 40px;
+        font-size: 30px;
+        border-radius: 100%;
+        padding-bottom: 1.5px;
+    }
+
+    #portfolio .webdev .blackScreen .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #portfolio .webdev .blackScreen .content .webImg {
+        max-width: 370px;
+        margin: 0 auto;
+    }
+
+    #portfolio .webdev .blackScreen .content .list {
+        max-width: 370px;
+        margin: 30px auto 50px;
+    }
+
+    #portfolio .webdev .blackScreen .content h2 {
+        font-size: 15px;
+    }
+
+    #portfolio .webdev .blackScreen .content .websiteName {
+        font-size: 20px;
+        margin: 0px 0 25px;
+    }
+
+    #portfolio .webdev .blackScreen .content a {
+        font-size: 14px;
+        padding: 6px 20px;
+    }
+
+    #portfolio .webdev .blackScreen .content h3 {
+        font-size: 13px;
+        margin: 40px 0 20px;
+    }
+
+    #portfolio .webdev .blackScreen .content ul li {
+        font-size: 13px;
+        margin-top: 5px;
+    }
+
+    #portfolio .java .flexBox {
+        flex-direction: column;
+        max-width: 400px;
+    }
+
+    #portfolio .java .flexBox .box {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #portfolio .java .blackScreen .closeWin {
+        width: 30px;
+        height: 30px;
+        font-size: 30px;
+        border-radius: 100%;
+        top: 10px;
+        right: 10px;
+    }
+
+    #portfolio .java .blackScreen {
+        padding-top: 70px;
+    }
+
+    #portfolio .java .blackScreen::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    #portfolio .java .blackScreen .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #portfolio .java .blackScreen .content .details {
+        margin-top: 30px;
+    }
+
+    #portfolio .java .blackScreen h3 {
+        font-size: 15px;
+    }
+
+    #portfolio .java .blackScreen h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    #portfolio .java .blackScreen p {
+        font-size: 13px;
+    }
+
+    #portfolio .java .flexBox .box .picture .overlay a {
+        font-size: 14px;
+    }
+
+    #portfolio .java .flexBox .box .picture .overlay button {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    #portfolio .java .flexBox .box .overlay .allblue {
+        font-size: 16px;
+        height: 20%;
+    }
+    /* Portfolio Section Ends Here #_Mobile_Devices */
+    /* Website Body Ends Here #_Mobile_Devices */
+
+    /* Website Footer Starts Here #_Mobile_Devices */
+    footer {
+        padding-top: 50px;
+        margin-top: 80px;
+    }
+
+    footer .headings {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    footer .headings h2 {
+        font-size: 25px;
+    }
+
+    footer .headings h4 {
+        font-size: 13px;
+    }
+
+    footer .flexBox{
+        flex-direction: column;
+    }
+
+    footer .flexBox .contact,
+    footer .flexBox .thankyou {
+        width: 100%;
+        /* text-align: center; */
+    }
+
+    footer .contact .fa {
+        font-size: 25px;
+    }
+
+    footer .contact .locate .fa {
+        font-size: 25px;
+    }
+
+    footer .contact p {
+        font-size: 14px;
+    }
+
+    footer .contact .allblue {
+        display: block;
+    }
+
+    footer .contact hr {
+        width: 60%;
+        margin: 20px auto;
+    }
+
+    footer .flexBox .thankyou {
+        margin-top: 70px;
+    }
+
+    footer .flexBox .thankyou p span {
+        font-size: 25px;
+    }
+
+    footer .flexBox .thankyou p {
+        font-size: 16px;
+    }
+
+    footer .flexBox .thankyou .greet {
+        margin-bottom: 5px;
+    }
+
+    footer .flexBox .thankyou .interview {
+        font-size: 13px;
+        margin-top: 30px;
+    }
+
+    footer .social {
+        flex-direction: column;
+        padding: 30px 0 100px;
+    }
+
+    footer .social .footerLogo {
+        width: 100%;
+        text-align: center
+    }
+    
+    footer .social .links {
+        width: 100%;
+        margin-top: 30px;
+        text-align: center
+    }
+    /* Website Footer Ends Here #_Mobile_Devices */
+}
+
+/* Animation Keyframes */
+@keyframes scrolldown {
+    0% {
+        transform: translateY(-100%);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes heading {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+/* ******************************************************************************************** */
+/* ******************************************************************************************** */
+/* ******************************************************************************************** */
+
+/* Custom Preloading Screen Starts Here */
+@import url(https://fonts.googleapis.com/css?family=Quattrocento+Sans);
+#preloaderScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  z-index: 9999;
+  transition: 1000ms;
+  /* display: none; */
+}
+
+.loading-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+}
+.loading-text span {
+  display: inline-block;
+  margin: 0 5px;
+  color: #fff;
+  font-family: "Quattrocento Sans", sans-serif;
+}
+.loading-text span:nth-child(1) {
+  filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0s infinite linear alternate;
+          animation: blur-text 1.5s 0s infinite linear alternate;
+}
+.loading-text span:nth-child(2) {
+  filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0.2s infinite linear alternate;
+          animation: blur-text 1.5s 0.2s infinite linear alternate;
+}
+.loading-text span:nth-child(3) {
+  filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0.4s infinite linear alternate;
+          animation: blur-text 1.5s 0.4s infinite linear alternate;
+}
+.loading-text span:nth-child(4) {
+  filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0.6s infinite linear alternate;
+          animation: blur-text 1.5s 0.6s infinite linear alternate;
+}
+.loading-text span:nth-child(5) {
+  filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0.8s infinite linear alternate;
+          animation: blur-text 1.5s 0.8s infinite linear alternate;
+}
+.loading-text span:nth-child(6) {
+  filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 1s infinite linear alternate;
+          animation: blur-text 1.5s 1s infinite linear alternate;
+}
+.loading-text span:nth-child(7) {
+  filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 1.2s infinite linear alternate;
+          animation: blur-text 1.5s 1.2s infinite linear alternate;
+}
+
+@-webkit-keyframes blur-text {
+  0% {
+    filter: blur(0px);
+  }
+  100% {
+    filter: blur(4px);
+  }
+}
+
+@keyframes blur-text {
+  0% {
+    filter: blur(0px);
+  }
+  100% {
+    filter: blur(4px);
+  }
+}
+/* Custom Preloading Screen Ends Here */
